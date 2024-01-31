@@ -1,0 +1,161 @@
+:root{
+    --black: #303030: 
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,113,1) 35%, rgba(0,212,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+main{
+    height: 80vh;
+    width: 90vw;
+    background-color: rgb(45, 45, 70);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+aside{
+    border-radius: 10px;
+    margin-left: 20px;
+    background-color: aliceblue;
+    height: 95%;
+    width: 60px;
+}
+.aside-width{
+    width: 200px;
+}
+.hamb{
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    height: 60px;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+.menu{
+    padding: 10px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+.links{
+    height: 70%;
+    width: 100%;
+    
+}
+.links ul li{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+
+}
+
+
+
+.svg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; 
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.svg-container svg{
+    fill: white;
+}
+
+
+.title-container{
+    display: none;
+    margin-left: 15px;
+}
+.block{
+    display: block;
+}
+
+.home,
+.user,
+.message,
+.camera,
+.settings{
+    transform: translate(0px);
+    transition: transform .3s ease;
+}
+.home svg{
+    fill: var(--black);
+}
+.home-active,
+.user-active,
+.message-active,
+.camera-active,
+.settings-active{
+    transition: transform .3s ease;
+    transform: translate(20px);
+}
+.home-active{
+    color: rgb(255, 65, 65);
+}
+.home-active .svg-container{
+    background-color: rgba(255, 65, 65);
+}
+
+
+.user svg{
+    fill: var(--black);
+}
+.user-active{
+    color: orange;
+}
+.user-active .svg-container{
+    background-color: orange;
+}
+
+.message svg{
+    fill: var(--black);
+}
+.message-active{
+    color: green;
+}
+.message-active .svg-container{
+    background-color: green;
+}
+
+.camera svg{
+    fill: var(--black);
+}
+.camera-active{
+    color : blue;
+}
+.camera-active .svg-container{
+    background-color: blue;
+}
+
+.settings svg{
+    fill: var(--black);
+}
+.settings-active{
+    color: violet;
+}
+.settings-active .svg-container{
+    background-color: violet;
+}
+
+
