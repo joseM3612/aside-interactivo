@@ -77,11 +77,14 @@ aside{
     height: 40px;
     padding: 5px;
     border-radius: 10px;
+
 }
 .svg-container svg{
     fill: white;
 }
 
+.home .svg-container {
+}
 
 .title-container{
     display: none;
@@ -115,6 +118,7 @@ aside{
 }
 .home-active .svg-container{
     background-color: rgba(255, 65, 65);
+    box-shadow: -3px 3px 10px rgb(255, 65, 65);
 }
 
 
@@ -126,6 +130,7 @@ aside{
 }
 .user-active .svg-container{
     background-color: orange;
+    box-shadow: -3px 3px 10px orange;
 }
 
 .message svg{
@@ -136,6 +141,8 @@ aside{
 }
 .message-active .svg-container{
     background-color: green;
+    box-shadow: -3px 3px 10px green;
+
 }
 
 .camera svg{
@@ -146,6 +153,7 @@ aside{
 }
 .camera-active .svg-container{
     background-color: blue;
+    box-shadow: -3px 3px 10px blue;
 }
 
 .settings svg{
@@ -153,9 +161,11 @@ aside{
 }
 .settings-active{
     color: violet;
+    
 }
 .settings-active .svg-container{
     background-color: violet;
+    box-shadow: -3px 3px 10px violet;
 }
 
 
